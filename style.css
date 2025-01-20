@@ -1,6 +1,6 @@
 /* تنظیمات کلی */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Vazir', sans-serif; /* پیشنهاد استفاده از فونت زیبای فارسی */
     line-height: 1.6;
     margin: 0;
     padding: 0;
@@ -8,7 +8,8 @@ body {
     color: #333;
     width: 100%;
     height: 100vh;
-    background: linear-gradient(107.44deg, #BCD9E9 0%, #A9E0FF 106.26%);
+    background: url('background-image.jpg') no-repeat center center fixed;
+    background-size: cover;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -16,8 +17,7 @@ body {
 
 body>div {
     max-width: 800px;
-    background: rgba(255, 255, 255, 0.3);
-    background: #fff;
+    background: rgba(255, 255, 255, 0.8);
     backdrop-filter: blur(15px);
     border-radius: 10px;
     padding: 2%;
@@ -33,7 +33,7 @@ body>div {
 }
 
 .container > div {
-    background: #dfdfdf;
+    background: #ffeb3b; /* پس‌زمینه زرد */
     padding: 20px;
     border-radius: 15px;
   }
@@ -59,20 +59,18 @@ a {
     display: inline-block;
     text-decoration: none;
     color: #fff;
-    background-color: #3498db;
+    background-color: #fbc02d; /* زرد روشن */
     padding: 10px 0;
     border-radius: 5px;
-    /* margin: 10px 5px; */
     text-align: center;
 }
 
 a:hover {
-    background-color: #2980b9;
+    background-color: #f9a825; /* زرد تیره‌تر */
 }
 
 /* فهرست کتاب‌ها */
 ul {
-    /* list-style-type: none; */
     padding: 0;
     text-align: center;
     float: right;
@@ -86,13 +84,13 @@ ul li a {
     display: inline-block;
     padding: 10px 0;
     color: #ffffff;
-    background-color: #3498db;
+    background-color: #fbc02d;
     text-decoration: none;
     border-radius: 5px;
 }
 
 ul li a:hover {
-    background-color: #2980b9;
+    background-color: #f9a825;
 }
 
 /* نمایش کتاب‌ها */
@@ -101,7 +99,7 @@ ul li a:hover {
     padding: 15px;
     border: 1px solid #ddd;
     border-radius: 5px;
-    background: #f9f9f9;
+    background: #fffde7; /* زرد ملایم */
 }
 
 .book img {
@@ -118,4 +116,8 @@ ul li a:hover {
 
 .book p {
     margin: 0;
+}
+
+.proj > ul{
+    width: 100%;
 }
